@@ -1,0 +1,62 @@
+\hypertarget{classGenerateBlock}{\section{\-Generate\-Block \-Class \-Reference}
+\label{classGenerateBlock}\index{\-Generate\-Block@{\-Generate\-Block}}
+}
+
+
+class \hyperlink{classGenerateBlock}{\-Generate\-Block} is used to generate \-Blocks from interpolated \hyperlink{classGridLayer}{\-Grid\-Layer}  
+
+
+
+
+{\ttfamily \#include $<$\-Generate\-Block.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classGenerateBlock_a03b4af01be301dc88176c125a91c3a83}{generate} (\hyperlink{classGridLayer}{\-Grid\-Layer} \&gl, \hyperlink{classInterpolate}{\-Interpolate} \&tool, vector$<$ \hyperlink{classBlock}{\-Block} $>$ \&result, int value, int interval\-Index)
+\begin{DoxyCompactList}\small\item\em this function use specified interpolating algorithm to interpolate \hyperlink{classGridLayer}{\-Grid\-Layer}, then extract all \-Blocks. \-Blocks which have the same interior value will be stored in the same 1\-D array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+class \hyperlink{classGenerateBlock}{\-Generate\-Block} is used to generate \-Blocks from interpolated \hyperlink{classGridLayer}{\-Grid\-Layer} 
+
+\-This class only provide methods, so it's a functional class 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classGenerateBlock_a03b4af01be301dc88176c125a91c3a83}{\index{\-Generate\-Block@{\-Generate\-Block}!generate@{generate}}
+\index{generate@{generate}!GenerateBlock@{\-Generate\-Block}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Generate\-Block\-::generate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Grid\-Layer} \&}]{gl, }
+\item[{{\bf \-Interpolate} \&}]{tool, }
+\item[{vector$<$ {\bf \-Block} $>$ \&}]{result, }
+\item[{int}]{value, }
+\item[{int}]{interval\-Index}
+\end{DoxyParamCaption}
+)}}\label{classGenerateBlock_a03b4af01be301dc88176c125a91c3a83}
+
+
+this function use specified interpolating algorithm to interpolate \hyperlink{classGridLayer}{\-Grid\-Layer}, then extract all \-Blocks. \-Blocks which have the same interior value will be stored in the same 1\-D array. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em gl.} & gl is \hyperlink{classGridLayer}{\-Grid\-Layer} instantiation \\
+\hline
+{\em tool.} & tool is interpolating algorithm \\
+\hline
+{\em result.} & result is a 1\-D array, will store \-Blocks have the same interior value equal to \char`\"{}value\char`\"{} \\
+\hline
+{\em value.} & specified the value you are interested \\
+\hline
+{\em interval\-Index.} & specific the interval layer you are interested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true means successfully generate all blocks, false means failed 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{GenerateBlock_8h}{\-Generate\-Block.\-h}\item 
+src/\-Generate\-Block.\-cpp\end{DoxyCompactItemize}

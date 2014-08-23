@@ -1,0 +1,61 @@
+\hypertarget{structGeometricInfo}{\section{\-Geometric\-Info \-Struct \-Reference}
+\label{structGeometricInfo}\index{\-Geometric\-Info@{\-Geometric\-Info}}
+}
+
+
+\hyperlink{structGeometricInfo}{\-Geometric\-Info} data structure is used to record ths geometric info about the grids in a grid layer.  
+
+
+
+
+{\ttfamily \#include $<$\-Grid\-Layer.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structGeometricInfo_a4bc847dd106d32107fde0c0d2fa00f77}{\hyperlink{structGeometricInfo_a4bc847dd106d32107fde0c0d2fa00f77}{\-Geometric\-Info} ()}\label{structGeometricInfo_a4bc847dd106d32107fde0c0d2fa00f77}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_aaa47b9cbf705ec7a20f6895721b8158f}{\hyperlink{structGeometricInfo_aaa47b9cbf705ec7a20f6895721b8158f}{\-Geometric\-Info} (double \-\_\-longitude, double \-\_\-latitude, double \-\_\-cell\-Size, \-Metric \-\_\-cell\-Metric)}\label{structGeometricInfo_aaa47b9cbf705ec7a20f6895721b8158f}
+
+\begin{DoxyCompactList}\small\item\em overloaded constructor \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_a996d4f1cb6b640cce436a982d400d0ad}{\hyperlink{structGeometricInfo_a996d4f1cb6b640cce436a982d400d0ad}{\-Geometric\-Info} (double \-\_\-longitude, double \-\_\-latitude, double \-\_\-cell\-Length, double \-\_\-cell\-Width)}\label{structGeometricInfo_a996d4f1cb6b640cce436a982d400d0ad}
+
+\begin{DoxyCompactList}\small\item\em overloaded constructor \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_a210973010d9c0e049e5ee7308b748358}{\hyperlink{structGeometricInfo_a210973010d9c0e049e5ee7308b748358}{\-Geometric\-Info} (double \-\_\-longitude, double \-\_\-latitude, double \-\_\-cell\-Length, \-Metric \-\_\-cell\-Length\-Metric, double \-\_\-cell\-Width, \-Metric \-\_\-cell\-Width\-Metric)}\label{structGeometricInfo_a210973010d9c0e049e5ee7308b748358}
+
+\begin{DoxyCompactList}\small\item\em overloaded constructor \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_a004bf2571153dca81c1a36950f1cb9e7}{\hyperlink{structGeometricInfo}{\-Geometric\-Info} \& \hyperlink{structGeometricInfo_a004bf2571153dca81c1a36950f1cb9e7}{operator=} (const \hyperlink{structGeometricInfo}{\-Geometric\-Info} \&right)}\label{structGeometricInfo_a004bf2571153dca81c1a36950f1cb9e7}
+
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structGeometricInfo_a91a5b4f492552e00f00e95293dd173f3}{double \hyperlink{structGeometricInfo_a91a5b4f492552e00f00e95293dd173f3}{longitude}}\label{structGeometricInfo_a91a5b4f492552e00f00e95293dd173f3}
+
+\begin{DoxyCompactList}\small\item\em longitude of the origin \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_afea47fa5d5a23432ba84b5fba8ddea7f}{double \hyperlink{structGeometricInfo_afea47fa5d5a23432ba84b5fba8ddea7f}{latitude}}\label{structGeometricInfo_afea47fa5d5a23432ba84b5fba8ddea7f}
+
+\begin{DoxyCompactList}\small\item\em latitude of the origin \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_a7d1c03e44c33b4b65eaf5541b3ce60ba}{double \hyperlink{structGeometricInfo_a7d1c03e44c33b4b65eaf5541b3ce60ba}{cell\-Length}}\label{structGeometricInfo_a7d1c03e44c33b4b65eaf5541b3ce60ba}
+
+\begin{DoxyCompactList}\small\item\em length of the cell \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_aee3e7c10cb0746a3d61097d3454895c2}{\-Metric \hyperlink{structGeometricInfo_aee3e7c10cb0746a3d61097d3454895c2}{cell\-Length\-Metric}}\label{structGeometricInfo_aee3e7c10cb0746a3d61097d3454895c2}
+
+\begin{DoxyCompactList}\small\item\em metric used by cell length \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_abc44fb6574fa395a5df1d655a689c237}{double \hyperlink{structGeometricInfo_abc44fb6574fa395a5df1d655a689c237}{cell\-Width}}\label{structGeometricInfo_abc44fb6574fa395a5df1d655a689c237}
+
+\begin{DoxyCompactList}\small\item\em width of the cell \end{DoxyCompactList}\item 
+\hypertarget{structGeometricInfo_aeaacb3aef4f2406491a732761fc2fbb3}{\-Metric \hyperlink{structGeometricInfo_aeaacb3aef4f2406491a732761fc2fbb3}{cell\-Width\-Metric}}\label{structGeometricInfo_aeaacb3aef4f2406491a732761fc2fbb3}
+
+\begin{DoxyCompactList}\small\item\em metric used by cell \char`\"{}width\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{structGeometricInfo}{\-Geometric\-Info} data structure is used to record ths geometric info about the grids in a grid layer. 
+
+\-The grids in a gridlayer have some geometric info, such as the origin, the metric, the cell size. \-All grids in a gridlayer should be homogeneous, this means the grids should not only have the same rows and columns, but also have the some origin, cell size, metric. 
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{GridLayer_8h}{\-Grid\-Layer.\-h}\end{DoxyCompactItemize}

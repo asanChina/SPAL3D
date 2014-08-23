@@ -1,0 +1,62 @@
+\hypertarget{classGenerateVolume}{\section{\-Generate\-Volume \-Class \-Reference}
+\label{classGenerateVolume}\index{\-Generate\-Volume@{\-Generate\-Volume}}
+}
+
+
+this class is used to generate volumes  
+
+
+
+
+{\ttfamily \#include $<$\-Generate\-Volume.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classGenerateVolume_a1c4a1b9928188dd96f33f611d41ef22a}{generate} (\hyperlink{classGridLayer}{\-Grid\-Layer} \&gl, \hyperlink{classInterpolate}{\-Interpolate} \&tool, vector$<$ \hyperlink{classVolume}{\-Volume} $>$ \&result, int value, int interval\-Index)
+\begin{DoxyCompactList}\small\item\em this function is used to generate volumes which have the specified value. \-All extracting volumes will be stored in 1\-D array and these volumes must exist in specified interval \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+this class is used to generate volumes 
+
+\-This class only provide methods, so only member function delcarations exist 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classGenerateVolume_a1c4a1b9928188dd96f33f611d41ef22a}{\index{\-Generate\-Volume@{\-Generate\-Volume}!generate@{generate}}
+\index{generate@{generate}!GenerateVolume@{\-Generate\-Volume}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Generate\-Volume\-::generate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Grid\-Layer} \&}]{gl, }
+\item[{{\bf \-Interpolate} \&}]{tool, }
+\item[{vector$<$ {\bf \-Volume} $>$ \&}]{result, }
+\item[{int}]{value, }
+\item[{int}]{interval\-Index}
+\end{DoxyParamCaption}
+)}}\label{classGenerateVolume_a1c4a1b9928188dd96f33f611d41ef22a}
+
+
+this function is used to generate volumes which have the specified value. \-All extracting volumes will be stored in 1\-D array and these volumes must exist in specified interval 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em gl.} & gl provide the \hyperlink{classGridLayer}{\-Grid\-Layer} we are working on \\
+\hline
+{\em tool.} & tool is the interpolating algorithm we are using to interpolate the gl \\
+\hline
+{\em result.} & result is 1\-D array, stores all extracting volumes \\
+\hline
+{\em value.} & value specify the interior value we are interested in \\
+\hline
+{\em interval\-Index.} & interval\-Index specify the interval of the gl we are interested in, must range from \char`\"{}0\char`\"{}(included) to \char`\"{}gl.\-get\-Num\-Of\-Layers()-\/2\char`\"{}(included \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true means extracting specified volumes successfully, otherwise falied 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{GenerateVolume_8h}{\-Generate\-Volume.\-h}\item 
+src/\-Generate\-Volume.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{classLinearInterpolate}{\section{\-Linear\-Interpolate \-Class \-Reference}
+\label{classLinearInterpolate}\index{\-Linear\-Interpolate@{\-Linear\-Interpolate}}
+}
+
+
+\hyperlink{classLinearInterpolate}{\-Linear\-Interpolate} is used to interpolate \hyperlink{classGridLayer}{\-Grid\-Layer} linearly.  
+
+
+
+
+{\ttfamily \#include $<$\-Linear\-Interpolate.\-h$>$}
+
+\-Inheritance diagram for \-Linear\-Interpolate\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLinearInterpolate}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLinearInterpolate_a4a9fc4c8716102768917160b45f72aa1}{\hyperlink{classLinearInterpolate_a4a9fc4c8716102768917160b45f72aa1}{\-Linear\-Interpolate} ()}\label{classLinearInterpolate_a4a9fc4c8716102768917160b45f72aa1}
+
+\begin{DoxyCompactList}\small\item\em $>$ default constructor \end{DoxyCompactList}\item 
+\hypertarget{classLinearInterpolate_a1d356429366039d290d822268121a605}{\hyperlink{classLinearInterpolate_a1d356429366039d290d822268121a605}{$\sim$\-Linear\-Interpolate} ()}\label{classLinearInterpolate_a1d356429366039d290d822268121a605}
+
+\begin{DoxyCompactList}\small\item\em $>$ destructor \end{DoxyCompactList}\item 
+bool \hyperlink{classLinearInterpolate_a1fbd904450c76999f393649026dfbd7f}{interpolate} (\hyperlink{classGridLayer}{\-Grid\-Layer} \&gl, vector$<$ vector$<$ vector$<$ long long $>$ $>$ $>$ \&value\-Set, \hyperlink{structDataInfo}{\-Data\-Info} \&datainfo, \hyperlink{structGeometricInfo}{\-Geometric\-Info} \&geometricinfo, int interval\-Index)
+\begin{DoxyCompactList}\small\item\em this is pure virtual function, implement how the grid\-Layer are intepolated \end{DoxyCompactList}\item 
+\hypertarget{classLinearInterpolate_ae390e31d42da1e6c8658df3cb0c9c85b}{int \hyperlink{classLinearInterpolate_ae390e31d42da1e6c8658df3cb0c9c85b}{euclidean\-Algo} (int first, int second)}\label{classLinearInterpolate_ae390e31d42da1e6c8658df3cb0c9c85b}
+
+\begin{DoxyCompactList}\small\item\em $>$ this function implement \char`\"{}\-Euclidean Algorithm\char`\"{} to calculate the greatest common divisor between \char`\"{}first\char`\"{} and \char`\"{}second\char`\"{}. \char`\"{}first\char`\"{} and \char`\"{}second\char`\"{} should be positive integer. return greatest common divisor if successfull, otherwise return -\/1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{classLinearInterpolate}{\-Linear\-Interpolate} is used to interpolate \hyperlink{classGridLayer}{\-Grid\-Layer} linearly. 
+
+\-This class inherit from \char`\"{}\-Interpolate\char`\"{}, implement pure virtual function \char`\"{}interpolate\char`\"{} 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classLinearInterpolate_a1fbd904450c76999f393649026dfbd7f}{\index{\-Linear\-Interpolate@{\-Linear\-Interpolate}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!LinearInterpolate@{\-Linear\-Interpolate}}
+\subsubsection[{interpolate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Linear\-Interpolate\-::interpolate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Grid\-Layer} \&}]{gl, }
+\item[{vector$<$ vector$<$ vector$<$ long long $>$ $>$ $>$ \&}]{value\-Set, }
+\item[{{\bf \-Data\-Info} \&}]{datainfo, }
+\item[{{\bf \-Geometric\-Info} \&}]{geometricinfo, }
+\item[{int}]{interval\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classLinearInterpolate_a1fbd904450c76999f393649026dfbd7f}
+
+
+this is pure virtual function, implement how the grid\-Layer are intepolated 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em gl.} & gl denote the grid\-Layer we are going to interpolating \\
+\hline
+{\em value\-Set.} & value\-Set will store the interpolated result \\
+\hline
+{\em interval\-Index.} & interval\-Index denote the interval we are going to interpolating, start from 0(included) to gl.\-size()-\/2(included) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true means interpolate successfully, false means failed 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classInterpolate_af899b3717d017a8e2054e411f5f780a9}{\-Interpolate}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{LinearInterpolate_8h}{\-Linear\-Interpolate.\-h}\item 
+src/\-Linear\-Interpolate.\-cpp\end{DoxyCompactItemize}

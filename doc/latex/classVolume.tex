@@ -1,0 +1,104 @@
+\hypertarget{classVolume}{\section{\-Volume \-Class \-Reference}
+\label{classVolume}\index{\-Volume@{\-Volume}}
+}
+
+
+class \char`\"{}\-Volume\char`\"{} declare basic information for infarctate volume  
+
+
+
+
+{\ttfamily \#include $<$\-Volume.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classVolume_a7d3bb81da95df85009b9f3ddd985cd9f}{\hyperlink{classVolume_a7d3bb81da95df85009b9f3ddd985cd9f}{\-Volume} ()}\label{classVolume_a7d3bb81da95df85009b9f3ddd985cd9f}
+
+\begin{DoxyCompactList}\small\item\em $>$ default constructor \end{DoxyCompactList}\item 
+\hypertarget{classVolume_af048d0fefdd99ea5da2884cc05184f1c}{\hyperlink{classVolume_af048d0fefdd99ea5da2884cc05184f1c}{\-Volume} (long long \-\_\-value, int \-\_\-multiplier)}\label{classVolume_af048d0fefdd99ea5da2884cc05184f1c}
+
+\begin{DoxyCompactList}\small\item\em $>$ overloaded constructor \end{DoxyCompactList}\item 
+\hypertarget{classVolume_a050797870896c974456aace591085fcb}{\hyperlink{classVolume_a050797870896c974456aace591085fcb}{\-Volume} (const \hyperlink{classVolume}{\-Volume} \&v)}\label{classVolume_a050797870896c974456aace591085fcb}
+
+\begin{DoxyCompactList}\small\item\em $>$ overloaded constructor \end{DoxyCompactList}\item 
+\hypertarget{classVolume_a4252526a9e620590d6b08a4e88bb1226}{{\bfseries \-Volume} (vector$<$ vector$<$ \hyperlink{classBlock}{\-Block} $>$ $>$ \&s)}\label{classVolume_a4252526a9e620590d6b08a4e88bb1226}
+
+\item 
+\hypertarget{classVolume_ad5d2015f5c0fea005f02be8f6d60b212}{\hyperlink{classVolume_ad5d2015f5c0fea005f02be8f6d60b212}{$\sim$\-Volume} ()}\label{classVolume_ad5d2015f5c0fea005f02be8f6d60b212}
+
+\begin{DoxyCompactList}\small\item\em $>$ destructor \end{DoxyCompactList}\item 
+\hypertarget{classVolume_ab975dcd838fe314b403551e6d57b629c}{long long \hyperlink{classVolume_ab975dcd838fe314b403551e6d57b629c}{get\-Value} ()}\label{classVolume_ab975dcd838fe314b403551e6d57b629c}
+
+\begin{DoxyCompactList}\small\item\em $>$ get the value of the volume \end{DoxyCompactList}\item 
+\hypertarget{classVolume_a8b8d68898c25aa27b7fcc00cb57ede88}{int \hyperlink{classVolume_a8b8d68898c25aa27b7fcc00cb57ede88}{get\-Multiplier} ()}\label{classVolume_a8b8d68898c25aa27b7fcc00cb57ede88}
+
+\begin{DoxyCompactList}\small\item\em $>$ get the multiplier used by \char`\"{}value\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classVolume_a69e856c2247a5bc28d322521699be8c6}{int \hyperlink{classVolume_a69e856c2247a5bc28d322521699be8c6}{get\-Num\-Of\-Planes} ()}\label{classVolume_a69e856c2247a5bc28d322521699be8c6}
+
+\begin{DoxyCompactList}\small\item\em $>$ get the number of rows of the volume \end{DoxyCompactList}\item 
+\hypertarget{classVolume_a8cc7673654c77b05b2fa102716ee265b}{vector$<$ \hyperlink{classBlock}{\-Block} $>$ \hyperlink{classVolume_a8cc7673654c77b05b2fa102716ee265b}{get\-Specific\-Plane} (int index)}\label{classVolume_a8cc7673654c77b05b2fa102716ee265b}
+
+\begin{DoxyCompactList}\small\item\em $>$ get specific row. all blocks in this row line up, they stands vertically \end{DoxyCompactList}\item 
+\hypertarget{classVolume_a573e89b2f9314b7dda60107420c7700c}{void \hyperlink{classVolume_a573e89b2f9314b7dda60107420c7700c}{set\-Value} (long long \-\_\-value)}\label{classVolume_a573e89b2f9314b7dda60107420c7700c}
+
+\begin{DoxyCompactList}\small\item\em $>$ set teh value for this volume \end{DoxyCompactList}\item 
+\hypertarget{classVolume_ae0bbefbd2ec7c441b4591e3dac19811d}{void \hyperlink{classVolume_ae0bbefbd2ec7c441b4591e3dac19811d}{set\-Multiplier} (int \-\_\-multiplier)}\label{classVolume_ae0bbefbd2ec7c441b4591e3dac19811d}
+
+\begin{DoxyCompactList}\small\item\em $>$ set the multiplier used by \char`\"{}value\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classVolume_aa235c4a97c27a591efc8ccb92401e557}{bool \hyperlink{classVolume_aa235c4a97c27a591efc8ccb92401e557}{set\-Specific\-Plane} (const vector$<$ \hyperlink{classBlock}{\-Block} $>$ \&argu, int index)}\label{classVolume_aa235c4a97c27a591efc8ccb92401e557}
+
+\begin{DoxyCompactList}\small\item\em $>$ set specific row of \-Blocks \end{DoxyCompactList}\item 
+\hyperlink{classCuboid}{\-Cuboid} \hyperlink{classVolume_a8207a496fa3c9fdbdc31589659886c7b}{get\-Bounding\-Cuboid} ()
+\begin{DoxyCompactList}\small\item\em $>$ get the bounding cuboid of this volume \end{DoxyCompactList}\item 
+double \hyperlink{classVolume_acdc52768ad67623cb33b2de02242c9f2}{get\-Real\-Volume\-Size} (const \-Metric \&metric)
+\begin{DoxyCompactList}\small\item\em $>$ get the occupied 3\-D space of the volume, parameter metric designate the metric used, can be \char`\"{}\-M\-E\-T\-E\-R\char`\"{} or \char`\"{}\-K\-I\-L\-O\-M\-E\-T\-E\-R\char`\"{} etc \end{DoxyCompactList}\item 
+double \hyperlink{classVolume_afa1984fe31ad7f5c5e0a261b01bb1d2a}{get\-Real\-Shell\-Area\-Size} (const \-Metric \&metric)
+\begin{DoxyCompactList}\small\item\em $>$ get the shell area of the volume, paramter metric designate the metric used, can be \char`\"{}\-M\-E\-T\-E\-R\char`\"{} or \char`\"{}\-K\-I\-L\-O\-M\-E\-T\-E\-R\char`\"{} etc \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+class \char`\"{}\-Volume\char`\"{} declare basic information for infarctate volume 
+
+class \char`\"{}\-Volume\char`\"{} consists of many \char`\"{}\-Block\char`\"{}s, these \char`\"{}\-Block\char`\"{}s are stored in a specific order for saving of space and analysing time. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classVolume_a8207a496fa3c9fdbdc31589659886c7b}{\index{\-Volume@{\-Volume}!get\-Bounding\-Cuboid@{get\-Bounding\-Cuboid}}
+\index{get\-Bounding\-Cuboid@{get\-Bounding\-Cuboid}!Volume@{\-Volume}}
+\subsubsection[{get\-Bounding\-Cuboid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cuboid} {\bf \-Volume\-::get\-Bounding\-Cuboid} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classVolume_a8207a496fa3c9fdbdc31589659886c7b}
+
+
+$>$ get the bounding cuboid of this volume 
+
+$>$ haven't been finished \hypertarget{classVolume_afa1984fe31ad7f5c5e0a261b01bb1d2a}{\index{\-Volume@{\-Volume}!get\-Real\-Shell\-Area\-Size@{get\-Real\-Shell\-Area\-Size}}
+\index{get\-Real\-Shell\-Area\-Size@{get\-Real\-Shell\-Area\-Size}!Volume@{\-Volume}}
+\subsubsection[{get\-Real\-Shell\-Area\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Volume\-::get\-Real\-Shell\-Area\-Size} (
+\begin{DoxyParamCaption}
+\item[{const \-Metric \&}]{metric}
+\end{DoxyParamCaption}
+)}}\label{classVolume_afa1984fe31ad7f5c5e0a261b01bb1d2a}
+
+
+$>$ get the shell area of the volume, paramter metric designate the metric used, can be \char`\"{}\-M\-E\-T\-E\-R\char`\"{} or \char`\"{}\-K\-I\-L\-O\-M\-E\-T\-E\-R\char`\"{} etc 
+
+$>$ haven't been finished \hypertarget{classVolume_acdc52768ad67623cb33b2de02242c9f2}{\index{\-Volume@{\-Volume}!get\-Real\-Volume\-Size@{get\-Real\-Volume\-Size}}
+\index{get\-Real\-Volume\-Size@{get\-Real\-Volume\-Size}!Volume@{\-Volume}}
+\subsubsection[{get\-Real\-Volume\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Volume\-::get\-Real\-Volume\-Size} (
+\begin{DoxyParamCaption}
+\item[{const \-Metric \&}]{metric}
+\end{DoxyParamCaption}
+)}}\label{classVolume_acdc52768ad67623cb33b2de02242c9f2}
+
+
+$>$ get the occupied 3\-D space of the volume, parameter metric designate the metric used, can be \char`\"{}\-M\-E\-T\-E\-R\char`\"{} or \char`\"{}\-K\-I\-L\-O\-M\-E\-T\-E\-R\char`\"{} etc 
+
+$>$ haven't been finished 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Volume_8h}{\-Volume.\-h}\item 
+src/\-Volume.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{GridLayer_8h}{\section{include/\-Grid\-Layer.h \-File \-Reference}
+\label{GridLayer_8h}\index{include/\-Grid\-Layer.\-h@{include/\-Grid\-Layer.\-h}}
+}
+
+
+\-This file contains one class and several auxiliary data structure.  
+
+
+{\ttfamily \#include $<$vector$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$iostream$>$}\*
+{\ttfamily \#include \char`\"{}\-File\-Type.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Metric.\-h\char`\"{}}\*
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDataInfo}{\-Data\-Info}
+\begin{DoxyCompactList}\small\item\em data structure to keep some detailed information for the data in a data file \end{DoxyCompactList}\item 
+struct \hyperlink{structGeometricInfo}{\-Geometric\-Info}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structGeometricInfo}{\-Geometric\-Info} data structure is used to record ths geometric info about the grids in a grid layer. \end{DoxyCompactList}\item 
+class \hyperlink{classGridLayer}{\-Grid\-Layer}
+\begin{DoxyCompactList}\small\item\em class accept only integer value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This file contains one class and several auxiliary data structure. even most data file provide float value, the grid layer should only store integer for easy of analysing. \-So actually, the value type in grid layer is alwasy \char`\"{}long long int\char`\"{}, if necessary, we will try to use big\-Int library later. \-All float values in data file will be transfer to integer before storing into a gridlayer either by multiplying a multiplier then rounded or dividing by a divisor then rounded. \-For a data file, all its numeric will be under the same processing \begin{DoxyAuthor}{\-Author}
+\-Pengjie \-Zhang 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2014-\/7-\/23
+\end{DoxyDate}
+contains the definition of class \char`\"{}\-Grid\-Layer\char`\"{} \begin{DoxyAuthor}{\-Author}
+\-Pengjie \-Zhang 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2014-\/7-\/23 
+\end{DoxyDate}

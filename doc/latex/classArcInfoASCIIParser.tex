@@ -1,0 +1,75 @@
+\hypertarget{classArcInfoASCIIParser}{\section{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser \-Class \-Reference}
+\label{classArcInfoASCIIParser}\index{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser@{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser}}
+}
+
+
+class \hyperlink{classArcInfoASCIIParser}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser} is only used to parse \-Arc/\-Info \-A\-S\-C\-I\-I data file  
+
+
+
+
+{\ttfamily \#include $<$\-Arc\-Info\-A\-S\-C\-I\-I\-Parser.\-h$>$}
+
+\-Inheritance diagram for \-Arc\-Info\-A\-S\-C\-I\-I\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArcInfoASCIIParser}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classArcInfoASCIIParser_a16289b738375476ff81fb802a5c470ee}{\hyperlink{classArcInfoASCIIParser_a16289b738375476ff81fb802a5c470ee}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser} ()}\label{classArcInfoASCIIParser_a16289b738375476ff81fb802a5c470ee}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIParser_ae7ff0d38d9c1603fbecc49749dd4d31b}{\hyperlink{classArcInfoASCIIParser_ae7ff0d38d9c1603fbecc49749dd4d31b}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser} (const string \&\-\_\-file\-Path)}\label{classArcInfoASCIIParser_ae7ff0d38d9c1603fbecc49749dd4d31b}
+
+\begin{DoxyCompactList}\small\item\em constructor set the filepath \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIParser_abe97d197a44d14edae52546d48079e1d}{\hyperlink{classArcInfoASCIIParser_abe97d197a44d14edae52546d48079e1d}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser} (const char $\ast$\-\_\-file\-Path)}\label{classArcInfoASCIIParser_abe97d197a44d14edae52546d48079e1d}
+
+\begin{DoxyCompactList}\small\item\em constructor set the filepath \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIParser_a0f12fe096ddf4d7fe1ab4f3287a74b8b}{\hyperlink{classArcInfoASCIIParser_a0f12fe096ddf4d7fe1ab4f3287a74b8b}{$\sim$\-Arc\-Info\-A\-S\-C\-I\-I\-Parser} ()}\label{classArcInfoASCIIParser_a0f12fe096ddf4d7fe1ab4f3287a74b8b}
+
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+bool \hyperlink{classArcInfoASCIIParser_a1f63530762118826b85565479c98502a}{parse} (\hyperlink{classGridLayer}{\-Grid\-Layer} \&gl, int multiplier=1)
+\begin{DoxyCompactList}\small\item\em pure virtual member function used to parse data into a int-\/valued grirdlayer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+class \hyperlink{classArcInfoASCIIParser}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser} is only used to parse \-Arc/\-Info \-A\-S\-C\-I\-I data file 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classArcInfoASCIIParser_a1f63530762118826b85565479c98502a}{\index{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser@{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser}!parse@{parse}}
+\index{parse@{parse}!ArcInfoASCIIParser@{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Arc\-Info\-A\-S\-C\-I\-I\-Parser\-::parse} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Grid\-Layer} \&}]{gl, }
+\item[{int}]{multiplier = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classArcInfoASCIIParser_a1f63530762118826b85565479c98502a}
+
+
+pure virtual member function used to parse data into a int-\/valued grirdlayer 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Path} & the file path in disk \\
+\hline
+{\em gl} & the integer-\/valued grid layer to extract data to \\
+\hline
+{\em multiplier} & sometime all data in data file are small double, say 0.\-0032, the user can designate a multiplier, say 10000, then all data in grid layer will be multiplied by this multiplier, default to 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true means successful, otherwise failed 
+\end{DoxyReturn}
+
+
+\-Implements \hyperlink{classDataParser_a45e498627eec0fc8638a34eab2ff2812}{\-Data\-Parser}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ArcInfoASCIIParser_8h}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser.\-h}\item 
+src/\-Arc\-Info\-A\-S\-C\-I\-I\-Parser.\-cpp\end{DoxyCompactItemize}

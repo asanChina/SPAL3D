@@ -1,0 +1,73 @@
+\hypertarget{classInterpolate}{\section{\-Interpolate \-Class \-Reference}
+\label{classInterpolate}\index{\-Interpolate@{\-Interpolate}}
+}
+
+
+this virtual class defines basic interface used by interpolating data in \char`\"{}grid\-Layer\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$\-Interpolate.\-h$>$}
+
+\-Inheritance diagram for \-Interpolate\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classInterpolate}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classInterpolate_a4525154d6de167606c69399e112a113a}{\hyperlink{classInterpolate_a4525154d6de167606c69399e112a113a}{\-Interpolate} ()}\label{classInterpolate_a4525154d6de167606c69399e112a113a}
+
+\begin{DoxyCompactList}\small\item\em $>$ default constructor \end{DoxyCompactList}\item 
+\hypertarget{classInterpolate_ae68a7e6180f1a62209d6947e2d864057}{virtual \hyperlink{classInterpolate_ae68a7e6180f1a62209d6947e2d864057}{$\sim$\-Interpolate} ()}\label{classInterpolate_ae68a7e6180f1a62209d6947e2d864057}
+
+\begin{DoxyCompactList}\small\item\em $>$ destructor \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classInterpolate_af899b3717d017a8e2054e411f5f780a9}{interpolate} (\hyperlink{classGridLayer}{\-Grid\-Layer} \&gl, vector$<$ vector$<$ vector$<$ long long $>$ $>$ $>$ \&value\-Set, \hyperlink{structDataInfo}{\-Data\-Info} \&datainfo, \hyperlink{structGeometricInfo}{\-Geometric\-Info} \&geometricinfo, int interval\-Index)=0
+\begin{DoxyCompactList}\small\item\em this is pure virtual function, implement how the grid\-Layer are intepolated \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+this virtual class defines basic interface used by interpolating data in \char`\"{}grid\-Layer\char`\"{} 
+
+this is a \char`\"{}functional\char`\"{} class, so only function supplied 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classInterpolate_af899b3717d017a8e2054e411f5f780a9}{\index{\-Interpolate@{\-Interpolate}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!Interpolate@{\-Interpolate}}
+\subsubsection[{interpolate}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool {\bf \-Interpolate\-::interpolate} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Grid\-Layer} \&}]{gl, }
+\item[{vector$<$ vector$<$ vector$<$ long long $>$ $>$ $>$ \&}]{value\-Set, }
+\item[{{\bf \-Data\-Info} \&}]{datainfo, }
+\item[{{\bf \-Geometric\-Info} \&}]{geometricinfo, }
+\item[{int}]{interval\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classInterpolate_af899b3717d017a8e2054e411f5f780a9}
+
+
+this is pure virtual function, implement how the grid\-Layer are intepolated 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em gl.} & gl denote the grid\-Layer we are going to interpolating \\
+\hline
+{\em value\-Set.} & value\-Set will store the interpolated result \\
+\hline
+{\em interval\-Index.} & interval\-Index denote the interval we are going to interpolating, start from 0(included) to gl.\-size()-\/2(included) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true means interpolate successfully, false means failed 
+\end{DoxyReturn}
+
+
+\-Implemented in \hyperlink{classLinearInterpolate_a1fbd904450c76999f393649026dfbd7f}{\-Linear\-Interpolate}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Interpolate_8h}{\-Interpolate.\-h}\end{DoxyCompactItemize}

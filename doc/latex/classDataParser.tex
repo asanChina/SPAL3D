@@ -1,0 +1,92 @@
+\hypertarget{classDataParser}{\section{\-Data\-Parser \-Class \-Reference}
+\label{classDataParser}\index{\-Data\-Parser@{\-Data\-Parser}}
+}
+
+
+virtual class \hyperlink{classDataParser}{\-Data\-Parser} is used to parse various data file format, extracting corresponding data into grid layer  
+
+
+
+
+{\ttfamily \#include $<$\-Data\-Parser.\-h$>$}
+
+\-Inheritance diagram for \-Data\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDataParser}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDataParser_adde3fdb08b6d298dac0bdf59b94d77c9}{\hyperlink{classDataParser_adde3fdb08b6d298dac0bdf59b94d77c9}{\-Data\-Parser} ()}\label{classDataParser_adde3fdb08b6d298dac0bdf59b94d77c9}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{classDataParser_afbf1e7cdc1bde9fa75cdb4bead409c5f}{\hyperlink{classDataParser_afbf1e7cdc1bde9fa75cdb4bead409c5f}{\-Data\-Parser} (const string \&\-\_\-file\-Path)}\label{classDataParser_afbf1e7cdc1bde9fa75cdb4bead409c5f}
+
+\begin{DoxyCompactList}\small\item\em overloaded constructor accept a parameter, setting the file path \end{DoxyCompactList}\item 
+\hypertarget{classDataParser_a6df8b2ad220ec78e9a5155543392051a}{\hyperlink{classDataParser_a6df8b2ad220ec78e9a5155543392051a}{\-Data\-Parser} (const char $\ast$\-\_\-file\-Path)}\label{classDataParser_a6df8b2ad220ec78e9a5155543392051a}
+
+\begin{DoxyCompactList}\small\item\em overloaded constructor accept one parameter, setting the file path \end{DoxyCompactList}\item 
+\hypertarget{classDataParser_a4ac09e3a8b888b204e23052be8e1ec80}{virtual \hyperlink{classDataParser_a4ac09e3a8b888b204e23052be8e1ec80}{$\sim$\-Data\-Parser} ()}\label{classDataParser_a4ac09e3a8b888b204e23052be8e1ec80}
+
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\hypertarget{classDataParser_a2d1d731f6e78f45a1d5e683aa2cc47c0}{void \hyperlink{classDataParser_a2d1d731f6e78f45a1d5e683aa2cc47c0}{set\-File\-Path} (const string \&\-\_\-file\-Path)}\label{classDataParser_a2d1d731f6e78f45a1d5e683aa2cc47c0}
+
+\begin{DoxyCompactList}\small\item\em setter. set the file path \end{DoxyCompactList}\item 
+\hypertarget{classDataParser_a0e65a165cd0144afe7c5fe68e71e090a}{void {\bfseries set\-File\-Path} (const char $\ast$\-\_\-file\-Path)}\label{classDataParser_a0e65a165cd0144afe7c5fe68e71e090a}
+
+\item 
+\hypertarget{classDataParser_aa16dd6e4395db13e1dc7a174a415ebc1}{string \hyperlink{classDataParser_aa16dd6e4395db13e1dc7a174a415ebc1}{get\-File\-Path} ()}\label{classDataParser_aa16dd6e4395db13e1dc7a174a415ebc1}
+
+\begin{DoxyCompactList}\small\item\em getter. get the file path \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classDataParser_a45e498627eec0fc8638a34eab2ff2812}{parse} (\hyperlink{classGridLayer}{\-Grid\-Layer} \&gl, int multiplier=1)=0
+\begin{DoxyCompactList}\small\item\em pure virtual member function used to parse data into a int-\/valued grirdlayer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDataParser_a02f3f9f3cca1e56902b98dc2e39c7e22}{string {\bfseries file\-Path}}\label{classDataParser_a02f3f9f3cca1e56902b98dc2e39c7e22}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+virtual class \hyperlink{classDataParser}{\-Data\-Parser} is used to parse various data file format, extracting corresponding data into grid layer 
+
+currently, we only accept parse data from disk file, and the accepted file format should register in \-File\-Type structure, this is a function class, only provides some functions. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDataParser_a45e498627eec0fc8638a34eab2ff2812}{\index{\-Data\-Parser@{\-Data\-Parser}!parse@{parse}}
+\index{parse@{parse}!DataParser@{\-Data\-Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool {\bf \-Data\-Parser\-::parse} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Grid\-Layer} \&}]{gl, }
+\item[{int}]{multiplier = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classDataParser_a45e498627eec0fc8638a34eab2ff2812}
+
+
+pure virtual member function used to parse data into a int-\/valued grirdlayer 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Path} & the file path in disk \\
+\hline
+{\em gl} & the integer-\/valued grid layer to extract data to \\
+\hline
+{\em multiplier} & sometime all data in data file are small double, say 0.\-0032, the user can designate a multiplier, say 10000, then all data in grid layer will be multiplied by this multiplier, default to 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true means successful, otherwise failed 
+\end{DoxyReturn}
+
+
+\-Implemented in \hyperlink{classArcInfoASCIIParser_a1f63530762118826b85565479c98502a}{\-Arc\-Info\-A\-S\-C\-I\-I\-Parser}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{DataParser_8h}{\-Data\-Parser.\-h}\item 
+src/\-Data\-Parser.\-cpp\end{DoxyCompactItemize}

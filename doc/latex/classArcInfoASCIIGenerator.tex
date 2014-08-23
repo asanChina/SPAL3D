@@ -1,0 +1,75 @@
+\hypertarget{classArcInfoASCIIGenerator}{\section{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator \-Class \-Reference}
+\label{classArcInfoASCIIGenerator}\index{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator@{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator}}
+}
+
+
+\hyperlink{classArcInfoASCIIGenerator}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} is inherited from \hyperlink{classDataGenerator}{\-Data\-Generator}, responsible for generating \-A\-R\-C/\-I\-N\-F\-O \-A\-S\-C\-I\-I data file.  
+
+
+
+
+{\ttfamily \#include $<$\-Arc\-Info\-A\-S\-C\-I\-I\-Generator.\-h$>$}
+
+\-Inheritance diagram for \-Arc\-Info\-A\-S\-C\-I\-I\-Generator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArcInfoASCIIGenerator}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structArcInfoASCIIGenerator_1_1FileHeader}{\-File\-Header}
+\begin{DoxyCompactList}\small\item\em file header for \-Arc/\-Info \-A\-S\-C\-I\-I file format \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArcInfoASCIIGenerator_ab0c7642cbf52bf5e86a66da76922bd43}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} (const string \&\-\_\-file\-Name, const string \&\-\_\-file\-Directory)
+\begin{DoxyCompactList}\small\item\em default constructor. use defualt values for both inherited member variables and self-\/declared variables \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_a7de403bda7b658d45b94124c77ab9cc9}{\hyperlink{classArcInfoASCIIGenerator_a7de403bda7b658d45b94124c77ab9cc9}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} (const char $\ast$\-\_\-file\-Name, const char $\ast$\-\_\-file\-Directory)}\label{classArcInfoASCIIGenerator_a7de403bda7b658d45b94124c77ab9cc9}
+
+\begin{DoxyCompactList}\small\item\em constructor used to reset inherited member variables \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_af4c006ea239d4427b3ab1bcb86704bd0}{\hyperlink{classArcInfoASCIIGenerator_af4c006ea239d4427b3ab1bcb86704bd0}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} (const string \&\-\_\-file\-Name, const string \&\-\_\-file\-Directory, int \-\_\-n\-Rows, int \-\_\-n\-Cols, double \-\_\-xll\-Corner, double \-\_\-yll\-Corner, double \-\_\-cell\-Size, int \-\_\-no\-Value)}\label{classArcInfoASCIIGenerator_af4c006ea239d4427b3ab1bcb86704bd0}
+
+\begin{DoxyCompactList}\small\item\em constructor used to reset both inherit members and self-\/declared members \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_ae1cb5e813f12493afa5e94a65827488b}{\hyperlink{classArcInfoASCIIGenerator_ae1cb5e813f12493afa5e94a65827488b}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} (int \-\_\-n\-Rows, int \-\_\-n\-Cols, double \-\_\-xll\-Corner, double \-\_\-yll\-Corner, double \-\_\-cell\-Size, int \-\_\-no\-Value)}\label{classArcInfoASCIIGenerator_ae1cb5e813f12493afa5e94a65827488b}
+
+\begin{DoxyCompactList}\small\item\em constructor initialize self-\/declared member variables \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_a985454ab0740ddc4fd0fcb6bec7b6c05}{bool \hyperlink{classArcInfoASCIIGenerator_a985454ab0740ddc4fd0fcb6bec7b6c05}{generate} (double min\-Value, double max\-Value, double step, int num\-Of\-Decimals, double no\-Value\-Percent)}\label{classArcInfoASCIIGenerator_a985454ab0740ddc4fd0fcb6bec7b6c05}
+
+\begin{DoxyCompactList}\small\item\em function as describe in \hyperlink{DataGenerator_8h}{\-Data\-Generator.\-h} file \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_a658168a9ebabc01febd8f1feced60041}{void \hyperlink{classArcInfoASCIIGenerator_a658168a9ebabc01febd8f1feced60041}{set\-Header} (int nrows, int ncols, double xllcorner, double yllcorner, double cellsize, int novalue)}\label{classArcInfoASCIIGenerator_a658168a9ebabc01febd8f1feced60041}
+
+\begin{DoxyCompactList}\small\item\em setter. overloaded member function used to set the \-Arc/\-Info \-A\-S\-C\-I\-I file header \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_af26ec3aa74fb8ef2c6b9b023b9138d71}{void \hyperlink{classArcInfoASCIIGenerator_af26ec3aa74fb8ef2c6b9b023b9138d71}{set\-Header} (\hyperlink{structArcInfoASCIIGenerator_1_1FileHeader}{\-File\-Header} \&tmp)}\label{classArcInfoASCIIGenerator_af26ec3aa74fb8ef2c6b9b023b9138d71}
+
+\begin{DoxyCompactList}\small\item\em setter. overloaded member function used to set the \-Arc/\-Info \-A\-S\-C\-I\-I file header \end{DoxyCompactList}\item 
+\hypertarget{classArcInfoASCIIGenerator_a2e5512db74f473c929fe0a06de92902d}{\hyperlink{structArcInfoASCIIGenerator_1_1FileHeader}{\-File\-Header} \& \hyperlink{classArcInfoASCIIGenerator_a2e5512db74f473c929fe0a06de92902d}{get\-Header} ()}\label{classArcInfoASCIIGenerator_a2e5512db74f473c929fe0a06de92902d}
+
+\begin{DoxyCompactList}\small\item\em getter. member function used to get the file header \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{classArcInfoASCIIGenerator}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} is inherited from \hyperlink{classDataGenerator}{\-Data\-Generator}, responsible for generating \-A\-R\-C/\-I\-N\-F\-O \-A\-S\-C\-I\-I data file. 
+
+\-This class implements \char`\"{}\-Data\-Generator\-::generate(...)\char`\"{} virtual function, also including some self-\/declared member functions for setting/getting format specific infomation. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classArcInfoASCIIGenerator_ab0c7642cbf52bf5e86a66da76922bd43}{\index{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator@{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator}!\-Arc\-Info\-A\-S\-C\-I\-I\-Generator@{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator}}
+\index{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator@{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator}!ArcInfoASCIIGenerator@{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator}}
+\subsubsection[{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Arc\-Info\-A\-S\-C\-I\-I\-Generator\-::\-Arc\-Info\-A\-S\-C\-I\-I\-Generator} (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-file\-Name, }
+\item[{const string \&}]{\-\_\-file\-Directory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classArcInfoASCIIGenerator_ab0c7642cbf52bf5e86a66da76922bd43}
+
+
+default constructor. use defualt values for both inherited member variables and self-\/declared variables 
+
+constructor used to reset inherited member variables from \hyperlink{classDataGenerator}{\-Data\-Generator} 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ArcInfoASCIIGenerator_8h}{\-Arc\-Info\-A\-S\-C\-I\-I\-Generator.\-h}\item 
+src/\-Arc\-Info\-A\-S\-C\-I\-I\-Generator.\-cpp\end{DoxyCompactItemize}
